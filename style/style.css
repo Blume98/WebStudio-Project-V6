@@ -53,7 +53,8 @@ button {
 
 .container {
   width: 100%;
-  width: 1158px;
+  /* width: 1158px; */
+  max-width: 318px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -164,14 +165,15 @@ button {
 /* -----------Hero----------- */
 
 .hero {
-  max-width: 1440px;
-  padding: 188px 0;
+  /* max-width: 1440px; */
+  max-width: 320px;
+  padding: 72px 0px;
   background-color: var(--NAVY-BLUE, #2e2f42);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/Portfolio/Hero/Hero.jpg);
+    url(../images/Portfolio/Hero/Dark-bg2x-mob-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -179,15 +181,15 @@ button {
 }
 
 .hero-title {
-  max-width: 496px;
+  max-width: 200px;
   color: var(--WHITE, #ffffff);
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07; /* 107.143% */
+  line-height: 1.12;
   letter-spacing: 0.02em;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .hero-btn {
@@ -200,7 +202,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
   padding: 16px 32px;
@@ -219,18 +221,18 @@ button {
 /* -----------WeAre----------- */
 
 .about {
-  padding: 120px 0;
+  padding: 96px 0px;
+  /* padding: 120px 0; */
 }
 
 .about-title {
 }
 
 .container-2-svg {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 112px;
-  /* padding: 24px 100px; */
   border: 1px solid #8e8f99;
   border-radius: 4px;
   background-color: #f4f4fd;
@@ -239,26 +241,29 @@ button {
 
 .about-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .about-item {
-  width: calc((100% - 72px) / 4);
 }
 
 .about-subtitle {
   color: var(--NAVY-BLUE, #2e2f42);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2; /* 120% */
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
 .about-text {
   color: var(--SLATE, #434455);
+  font-weight: 500;
+  font-style: normal;
   font-size: 16px;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
@@ -267,7 +272,7 @@ button {
 
 .team {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .team-title {
@@ -275,7 +280,7 @@ button {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.11; /* 111.111% */
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
@@ -283,11 +288,12 @@ button {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .team-item {
-  width: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -305,7 +311,7 @@ button {
   text-align: center;
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.2; /* 120% */
+  line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
@@ -315,7 +321,7 @@ button {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
@@ -355,7 +361,7 @@ button {
 /* -----------Portfolio----------- */
 
 .portfolio {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .portfolio-title {
@@ -363,7 +369,7 @@ button {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.11; /* 111.111% */
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
@@ -372,12 +378,10 @@ button {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px;
 }
 
 .portfolio-item {
-  width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -425,7 +429,7 @@ button {
   color: var(--NAVY-BLUE, #2e2f42);
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.2; /* 120% */
+  line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
@@ -434,7 +438,7 @@ button {
   color: var(--SLATE, #434455);
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5; /* 150% */
+  line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
@@ -794,5 +798,143 @@ button {
   color: #fff;
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* ------------------------ */
+
+/* --------MEDIA----------- */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+  /* ---------HERO--------- */
+  .hero {
+    max-width: 768px;
+    padding: 112px 0px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Portfolio/Hero/Dark-bg2x-tablet-min.jpg);
+  }
+
+  .hero-title {
+    max-width: 500px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  /* --------------------- */
+  /* ---------WeAre------- */
+  .about-list {
+    gap: 72px 24px;
+  }
+
+  .about-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .about-subtitle {
+    text-align: start;
+  }
+  /* --------------------- */
+  /* --------Team--------- */
+  .tablet-team {
+    max-width: 582px;
+  }
+
+  .team-list {
+    gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+  /* --------------------- */
+  /* -----Portfolio------- */
+  .portfolio-list {
+    gap: 72px 24px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  /* --------------------- */
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+  /* ---------HERO--------- */
+  .hero {
+    max-width: 1440px;
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Portfolio/Hero/people-office2x-desktop-min.jpg);
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+  /* ---------------------- */
+
+  /* ---------WeAre------- */
+  .about {
+    padding: 120px 0px;
+  }
+
+  .about-list {
+    gap: 24px;
+  }
+
+  .container-2-svg {
+    display: flex;
+  }
+
+  .about-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .about-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .about-text {
+    font-weight: 400;
+  }
+
+  /* --------------------- */
+  /* --------Team--------- */
+  .team {
+    padding: 120px 0;
+  }
+  .tablet-team {
+    max-width: 1158px;
+  }
+
+  .team-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+  /* --------------------- */
+  /* -----Portfolio------- */
+  .portfolio {
+    padding: 120px 0;
+  }
+
+  .portfolio-list {
+    gap: 48px 24px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 48px) / 3);
+  }
+  /* --------------------- */
 }
 /* ------------------------ */
